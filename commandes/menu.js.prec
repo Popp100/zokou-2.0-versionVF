@@ -22,7 +22,7 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
     const date = moment.tz("asia/karachi").format("DD/MM/YYYY");
     console.log("date" + date);
     console.log("temps " + temps);
-    let menuMsg = "  ╩═══ * Ƶ𝓞ｋØ𝓊 * ╩═══\n\n";
+    let menuMsg = "  ╩═══ * せきりゅうてい * ╩═══\n\n";
     /*menuMsg+=`
     
     
@@ -44,7 +44,7 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
    ||      Date : ${date}
    ||      Heure : ${temps}
    ||      Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}                   {Plateforme : ${os.platform()}
-   ||  Développeurs : Djalega++||Luffy
+   ||  Développeurs : せきりゅうてい||Rasetsu
    ||
    ╚════ ▓▓ ࿇ ▓▓ ════╝`;*/
     menuMsg += `
@@ -57,7 +57,7 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
 ║    Heure : ${temps}
 ║    Mémoire : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ║    Plateforme : ${os.platform()}
-║    Développeurs : Djalega++||Luffy
+║    Développeurs : せきりゅうてい||Rasetsu
 ╚════--------------- \n\n`;
     for (const cat in coms) {
         if (!emoji[cat]) {
@@ -71,7 +71,7 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
     //  var link = "https://wallpapercave.com/uwp/uwp3860299.jpeg";
     var link = s.IMAGE_MENU;
     try {
-        zk.sendMessage(dest, { image: { url: link }, caption: menuMsg, footer: "by Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: link }, caption: menuMsg, footer: "by Ittou Rasetsu" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -117,7 +117,7 @@ var tt=[]
 
     var link = "https://wallpapercave.com/uwp/uwp3860299.jpeg"
     // var listCom =listeCommande()
-    let msg= "  ╩═══ * Ƶ𝓞ｋØ𝓊 * ╩═══\n\n"
+    let msg= "  ╩═══ * せきりゅうてい * ╩═══\n\n"
 
 
 //const listeCommande= async ()=> {
